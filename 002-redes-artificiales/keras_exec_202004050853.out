@@ -1,0 +1,126 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 1176)              923160    
+_________________________________________________________________
+dropout (Dropout)            (None, 1176)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 392)               461384    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 392)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 588)               231084    
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 588)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 196)               115444    
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 196)               0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 294)               57918     
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 294)               0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 98)                28910     
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 98)                0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 147)               14553     
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 147)               0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 49)                7252      
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 49)                0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 10)                500       
+=================================================================
+Total params: 1,840,205
+Trainable params: 1,840,205
+Non-trainable params: 0
+_________________________________________________________________
+2020-04-05 07:42:59.185148: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/40
+2020-04-05 07:43:01.087967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+60000/60000 [==============================] - 15s 253us/sample - loss: 1.6271 - sparse_categorical_accuracy: 0.3812
+Epoch 2/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.9819 - sparse_categorical_accuracy: 0.6329
+Epoch 3/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.7819 - sparse_categorical_accuracy: 0.7194
+Epoch 4/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.6798 - sparse_categorical_accuracy: 0.7618
+Epoch 5/40
+60000/60000 [==============================] - 14s 230us/sample - loss: 0.6151 - sparse_categorical_accuracy: 0.7919
+Epoch 6/40
+60000/60000 [==============================] - 14s 230us/sample - loss: 0.5698 - sparse_categorical_accuracy: 0.8100
+Epoch 7/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.5425 - sparse_categorical_accuracy: 0.8239
+Epoch 8/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.5191 - sparse_categorical_accuracy: 0.8309
+Epoch 9/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.5010 - sparse_categorical_accuracy: 0.8369
+Epoch 10/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.4858 - sparse_categorical_accuracy: 0.8423
+Epoch 11/40
+60000/60000 [==============================] - 14s 230us/sample - loss: 0.4734 - sparse_categorical_accuracy: 0.8458
+Epoch 12/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.4633 - sparse_categorical_accuracy: 0.8477
+Epoch 13/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.4540 - sparse_categorical_accuracy: 0.8515
+Epoch 14/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.4446 - sparse_categorical_accuracy: 0.8556
+Epoch 15/40
+60000/60000 [==============================] - 13s 224us/sample - loss: 0.4359 - sparse_categorical_accuracy: 0.8567
+Epoch 16/40
+60000/60000 [==============================] - 13s 223us/sample - loss: 0.4297 - sparse_categorical_accuracy: 0.8605
+Epoch 17/40
+60000/60000 [==============================] - 13s 225us/sample - loss: 0.4279 - sparse_categorical_accuracy: 0.8603
+Epoch 18/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.4253 - sparse_categorical_accuracy: 0.8612
+Epoch 19/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.4228 - sparse_categorical_accuracy: 0.8635
+Epoch 20/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.4133 - sparse_categorical_accuracy: 0.8648
+Epoch 21/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.4101 - sparse_categorical_accuracy: 0.8665
+Epoch 22/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.4081 - sparse_categorical_accuracy: 0.8668
+Epoch 23/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.4011 - sparse_categorical_accuracy: 0.8687
+Epoch 24/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.4028 - sparse_categorical_accuracy: 0.8693
+Epoch 25/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.3976 - sparse_categorical_accuracy: 0.8706
+Epoch 26/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.3947 - sparse_categorical_accuracy: 0.8716
+Epoch 27/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.3928 - sparse_categorical_accuracy: 0.8723
+Epoch 28/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.3914 - sparse_categorical_accuracy: 0.8733
+Epoch 29/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.3876 - sparse_categorical_accuracy: 0.8736
+Epoch 30/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.3835 - sparse_categorical_accuracy: 0.8752
+Epoch 31/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.3855 - sparse_categorical_accuracy: 0.8743
+Epoch 32/40
+60000/60000 [==============================] - 14s 226us/sample - loss: 0.3816 - sparse_categorical_accuracy: 0.8762
+Epoch 33/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.3793 - sparse_categorical_accuracy: 0.8775
+Epoch 34/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.3798 - sparse_categorical_accuracy: 0.8766
+Epoch 35/40
+60000/60000 [==============================] - 14s 229us/sample - loss: 0.3725 - sparse_categorical_accuracy: 0.8773
+Epoch 36/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.3721 - sparse_categorical_accuracy: 0.8787
+Epoch 37/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.3713 - sparse_categorical_accuracy: 0.8796
+Epoch 38/40
+60000/60000 [==============================] - 14s 226us/sample - loss: 0.3702 - sparse_categorical_accuracy: 0.8798
+Epoch 39/40
+60000/60000 [==============================] - 14s 227us/sample - loss: 0.3641 - sparse_categorical_accuracy: 0.8815
+Epoch 40/40
+60000/60000 [==============================] - 14s 228us/sample - loss: 0.3661 - sparse_categorical_accuracy: 0.8817
+Test accuracy: 0.8830000162124634
