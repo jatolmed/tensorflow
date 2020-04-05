@@ -1,0 +1,257 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+gaussian_noise (GaussianNois (None, 784)               0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              803840    
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 256)               262400    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 32)                8224      
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 8)                 264       
+_________________________________________________________________
+dense_4 (Dense)              (None, 10)                90        
+=================================================================
+Total params: 1,074,818
+Trainable params: 1,074,818
+Non-trainable params: 0
+_________________________________________________________________
+2020-04-05 13:50:28.666420: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/20
+2020-04-05 13:50:30.265015: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+60000/60000 [==============================] - 11s 181us/sample - loss: 0.7710 - sparse_categorical_accuracy: 0.7578
+Epoch 2/20
+60000/60000 [==============================] - 10s 163us/sample - loss: 0.4559 - sparse_categorical_accuracy: 0.8466
+Epoch 3/20
+60000/60000 [==============================] - 10s 161us/sample - loss: 0.4039 - sparse_categorical_accuracy: 0.8601
+Epoch 4/20
+60000/60000 [==============================] - 10s 162us/sample - loss: 0.3731 - sparse_categorical_accuracy: 0.8685
+Epoch 5/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.3493 - sparse_categorical_accuracy: 0.8769
+Epoch 6/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.3319 - sparse_categorical_accuracy: 0.8823
+Epoch 7/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.3194 - sparse_categorical_accuracy: 0.8848
+Epoch 8/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.3049 - sparse_categorical_accuracy: 0.8898
+Epoch 9/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.2930 - sparse_categorical_accuracy: 0.8941
+Epoch 10/20
+60000/60000 [==============================] - 10s 160us/sample - loss: 0.2847 - sparse_categorical_accuracy: 0.8975
+Epoch 11/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.2753 - sparse_categorical_accuracy: 0.8998
+Epoch 12/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2655 - sparse_categorical_accuracy: 0.9022
+Epoch 13/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2569 - sparse_categorical_accuracy: 0.9066
+Epoch 14/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2494 - sparse_categorical_accuracy: 0.9101
+Epoch 15/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2428 - sparse_categorical_accuracy: 0.9123
+Epoch 16/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.2373 - sparse_categorical_accuracy: 0.9147
+Epoch 17/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2289 - sparse_categorical_accuracy: 0.9169
+Epoch 18/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.2218 - sparse_categorical_accuracy: 0.9182
+Epoch 19/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.2162 - sparse_categorical_accuracy: 0.9209
+Epoch 20/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.2110 - sparse_categorical_accuracy: 0.9234
+#################################################################
+##                        20 ITERATIONS                        ##
+#################################################################
+Test accuracy: 0.8873000144958496
+2020-04-05 13:53:42.204545: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.2046 - sparse_categorical_accuracy: 0.9262
+Epoch 2/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.1999 - sparse_categorical_accuracy: 0.9267
+Epoch 3/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1932 - sparse_categorical_accuracy: 0.9304
+Epoch 4/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1904 - sparse_categorical_accuracy: 0.9291
+Epoch 5/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1835 - sparse_categorical_accuracy: 0.9331
+Epoch 6/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.1798 - sparse_categorical_accuracy: 0.9337
+Epoch 7/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1744 - sparse_categorical_accuracy: 0.9356
+Epoch 8/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1703 - sparse_categorical_accuracy: 0.9385
+Epoch 9/20
+60000/60000 [==============================] - 9s 153us/sample - loss: 0.1666 - sparse_categorical_accuracy: 0.9389
+Epoch 10/20
+60000/60000 [==============================] - 9s 150us/sample - loss: 0.1622 - sparse_categorical_accuracy: 0.9407
+Epoch 11/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1570 - sparse_categorical_accuracy: 0.9427
+Epoch 12/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.1534 - sparse_categorical_accuracy: 0.9439
+Epoch 13/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1491 - sparse_categorical_accuracy: 0.9451
+Epoch 14/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.1448 - sparse_categorical_accuracy: 0.9462
+Epoch 15/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1404 - sparse_categorical_accuracy: 0.9485
+Epoch 16/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1393 - sparse_categorical_accuracy: 0.9487
+Epoch 17/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1346 - sparse_categorical_accuracy: 0.9511
+Epoch 18/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1305 - sparse_categorical_accuracy: 0.9521
+Epoch 19/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1263 - sparse_categorical_accuracy: 0.9534
+Epoch 20/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1251 - sparse_categorical_accuracy: 0.9553
+#################################################################
+##                        40 ITERATIONS                        ##
+#################################################################
+Test accuracy: 0.890500009059906
+2020-04-05 13:56:51.680640: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.1207 - sparse_categorical_accuracy: 0.9560
+Epoch 2/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1167 - sparse_categorical_accuracy: 0.9570
+Epoch 3/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1151 - sparse_categorical_accuracy: 0.9576
+Epoch 4/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1107 - sparse_categorical_accuracy: 0.9586
+Epoch 5/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1071 - sparse_categorical_accuracy: 0.9607
+Epoch 6/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.1067 - sparse_categorical_accuracy: 0.9611
+Epoch 7/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.1039 - sparse_categorical_accuracy: 0.9612
+Epoch 8/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.0989 - sparse_categorical_accuracy: 0.9643
+Epoch 9/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0979 - sparse_categorical_accuracy: 0.9642
+Epoch 10/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0962 - sparse_categorical_accuracy: 0.9655
+Epoch 11/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0924 - sparse_categorical_accuracy: 0.9660
+Epoch 12/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0913 - sparse_categorical_accuracy: 0.9667
+Epoch 13/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0885 - sparse_categorical_accuracy: 0.9685
+Epoch 14/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0867 - sparse_categorical_accuracy: 0.9678
+Epoch 15/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0832 - sparse_categorical_accuracy: 0.9699
+Epoch 16/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0807 - sparse_categorical_accuracy: 0.9708
+Epoch 17/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0799 - sparse_categorical_accuracy: 0.9703
+Epoch 18/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0816 - sparse_categorical_accuracy: 0.9700
+Epoch 19/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0773 - sparse_categorical_accuracy: 0.9716
+Epoch 20/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0767 - sparse_categorical_accuracy: 0.9716
+#################################################################
+##                        60 ITERATIONS                        ##
+#################################################################
+Test accuracy: 0.8946999907493591
+2020-04-05 14:00:02.626340: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0732 - sparse_categorical_accuracy: 0.9732
+Epoch 2/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0699 - sparse_categorical_accuracy: 0.9749
+Epoch 3/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0695 - sparse_categorical_accuracy: 0.9750
+Epoch 4/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0702 - sparse_categorical_accuracy: 0.9750
+Epoch 5/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0672 - sparse_categorical_accuracy: 0.9751
+Epoch 6/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0678 - sparse_categorical_accuracy: 0.9751
+Epoch 7/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0626 - sparse_categorical_accuracy: 0.9769
+Epoch 8/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0644 - sparse_categorical_accuracy: 0.9765
+Epoch 9/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0613 - sparse_categorical_accuracy: 0.9778
+Epoch 10/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0612 - sparse_categorical_accuracy: 0.9778
+Epoch 11/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0596 - sparse_categorical_accuracy: 0.9784
+Epoch 12/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0592 - sparse_categorical_accuracy: 0.9782
+Epoch 13/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0565 - sparse_categorical_accuracy: 0.9793
+Epoch 14/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0537 - sparse_categorical_accuracy: 0.9805
+Epoch 15/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0546 - sparse_categorical_accuracy: 0.9807
+Epoch 16/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0541 - sparse_categorical_accuracy: 0.9800
+Epoch 17/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0541 - sparse_categorical_accuracy: 0.9801
+Epoch 18/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0521 - sparse_categorical_accuracy: 0.9811
+Epoch 19/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0494 - sparse_categorical_accuracy: 0.9819
+Epoch 20/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0504 - sparse_categorical_accuracy: 0.9818
+#################################################################
+##                        80 ITERATIONS                        ##
+#################################################################
+Test accuracy: 0.8898000121116638
+2020-04-05 14:03:13.632969: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 376320000 exceeds 10% of system memory.
+Train on 60000 samples
+Epoch 1/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0481 - sparse_categorical_accuracy: 0.9823
+Epoch 2/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0483 - sparse_categorical_accuracy: 0.9822
+Epoch 3/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0457 - sparse_categorical_accuracy: 0.9833
+Epoch 4/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0461 - sparse_categorical_accuracy: 0.9837
+Epoch 5/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0447 - sparse_categorical_accuracy: 0.9837
+Epoch 6/20
+60000/60000 [==============================] - 9s 156us/sample - loss: 0.0447 - sparse_categorical_accuracy: 0.9837
+Epoch 7/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0453 - sparse_categorical_accuracy: 0.9842
+Epoch 8/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0434 - sparse_categorical_accuracy: 0.9846
+Epoch 9/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0435 - sparse_categorical_accuracy: 0.9841
+Epoch 10/20
+60000/60000 [==============================] - 10s 159us/sample - loss: 0.0400 - sparse_categorical_accuracy: 0.9858
+Epoch 11/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0417 - sparse_categorical_accuracy: 0.9853
+Epoch 12/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0401 - sparse_categorical_accuracy: 0.9849
+Epoch 13/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0391 - sparse_categorical_accuracy: 0.9856
+Epoch 14/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0383 - sparse_categorical_accuracy: 0.9860
+Epoch 15/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0397 - sparse_categorical_accuracy: 0.9853
+Epoch 16/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0377 - sparse_categorical_accuracy: 0.9865
+Epoch 17/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0383 - sparse_categorical_accuracy: 0.9858
+Epoch 18/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0359 - sparse_categorical_accuracy: 0.9873
+Epoch 19/20
+60000/60000 [==============================] - 9s 158us/sample - loss: 0.0342 - sparse_categorical_accuracy: 0.9882
+Epoch 20/20
+60000/60000 [==============================] - 9s 157us/sample - loss: 0.0359 - sparse_categorical_accuracy: 0.9871
+#################################################################
+##                       100 ITERATIONS                        ##
+#################################################################
+Test accuracy: 0.894599974155426
