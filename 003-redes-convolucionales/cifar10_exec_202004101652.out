@@ -1,0 +1,86 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 32, 32, 32)        896       
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 32)        9248      
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 16, 16, 32)        0         
+_________________________________________________________________
+dropout (Dropout)            (None, 16, 16, 32)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 16, 16, 64)        18496     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 16, 16, 64)        36928     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 8, 8, 64)          0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 8, 8, 64)          0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 8, 8, 128)         73856     
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 8, 8, 128)         147584    
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 4, 4, 128)         0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 4, 4, 128)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 2048)              0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               1049088   
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               65664     
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                1290      
+=================================================================
+Total params: 1,403,050
+Trainable params: 1,403,050
+Non-trainable params: 0
+_________________________________________________________________
+Train on 50000 samples
+Epoch 1/20
+2020-04-10 15:40:43.775497: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-10 15:40:44.008285: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+50000/50000 [==============================] - 29s 579us/sample - loss: 1.6403 - sparse_categorical_accuracy: 0.3907
+Epoch 2/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 1.2063 - sparse_categorical_accuracy: 0.5678
+Epoch 3/20
+50000/50000 [==============================] - 26s 524us/sample - loss: 0.9968 - sparse_categorical_accuracy: 0.6462
+Epoch 4/20
+50000/50000 [==============================] - 26s 524us/sample - loss: 0.8693 - sparse_categorical_accuracy: 0.6927
+Epoch 5/20
+50000/50000 [==============================] - 26s 524us/sample - loss: 0.7755 - sparse_categorical_accuracy: 0.7267
+Epoch 6/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 0.6996 - sparse_categorical_accuracy: 0.7554
+Epoch 7/20
+50000/50000 [==============================] - 26s 524us/sample - loss: 0.6355 - sparse_categorical_accuracy: 0.7777
+Epoch 8/20
+50000/50000 [==============================] - 26s 522us/sample - loss: 0.5883 - sparse_categorical_accuracy: 0.7951
+Epoch 9/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 0.5456 - sparse_categorical_accuracy: 0.8086
+Epoch 10/20
+50000/50000 [==============================] - 26s 523us/sample - loss: 0.5096 - sparse_categorical_accuracy: 0.8215
+Epoch 11/20
+50000/50000 [==============================] - 26s 524us/sample - loss: 0.4712 - sparse_categorical_accuracy: 0.8350
+Epoch 12/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 0.4414 - sparse_categorical_accuracy: 0.8430
+Epoch 13/20
+50000/50000 [==============================] - 26s 523us/sample - loss: 0.4132 - sparse_categorical_accuracy: 0.8545
+Epoch 14/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 0.3949 - sparse_categorical_accuracy: 0.8594
+Epoch 15/20
+50000/50000 [==============================] - 26s 523us/sample - loss: 0.3661 - sparse_categorical_accuracy: 0.8706
+Epoch 16/20
+50000/50000 [==============================] - 26s 522us/sample - loss: 0.3489 - sparse_categorical_accuracy: 0.8772
+Epoch 17/20
+50000/50000 [==============================] - 26s 523us/sample - loss: 0.3299 - sparse_categorical_accuracy: 0.8830
+Epoch 18/20
+50000/50000 [==============================] - 26s 525us/sample - loss: 0.3096 - sparse_categorical_accuracy: 0.8907
+Epoch 19/20
+50000/50000 [==============================] - 26s 522us/sample - loss: 0.2913 - sparse_categorical_accuracy: 0.8949
+Epoch 20/20
+50000/50000 [==============================] - 26s 527us/sample - loss: 0.2835 - sparse_categorical_accuracy: 0.8993
+Test accuracy: 0.8241000175476074
